@@ -286,3 +286,5 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+Hjerpbakk.FaceRecognitionService/config.json
+face-recognition-service.txt
