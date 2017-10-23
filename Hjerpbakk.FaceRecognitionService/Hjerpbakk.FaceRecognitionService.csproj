@@ -4,6 +4,8 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <ReleaseVersion>1.0.0.0</ReleaseVersion>
 	<Version>1.0.0.0</Version>
+	<ApplicationInsightsResourceId>/subscriptions/33ce3627-590f-4187-b3f9-5127ea1f6b5a/resourcegroups/dipsbot/providers/microsoft.insights/components/dips-trondheim-face-recognition-service</ApplicationInsightsResourceId>
+	<ApplicationInsightsAnnotationResourceId>/subscriptions/33ce3627-590f-4187-b3f9-5127ea1f6b5a/resourcegroups/dipsbot/providers/microsoft.insights/components/dips-trondheim-face-recognition-service</ApplicationInsightsAnnotationResourceId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
     <PackageReference Include="Microsoft.ProjectOxford.Face.DotNetStandard" Version="1.0.0" />
@@ -21,6 +24,10 @@
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
   </ItemGroup>
 
 </Project>
