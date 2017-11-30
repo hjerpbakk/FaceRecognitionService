@@ -45,6 +45,7 @@ namespace Hjerpbakk.FaceRecognitionService
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
             app.UseMvc();
         }
 
